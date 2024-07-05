@@ -1,4 +1,8 @@
-#(©)CodeXBotz
+# Jishu Developer 
+# Don't Remove Credit 🥺
+# Telegram Channel @Madflix_Bots
+# Backup Channel @JishuBotz
+# Developer @JishuDeveloper
 
 
 
@@ -9,59 +13,55 @@ from logging.handlers import RotatingFileHandler
 
 
 
-#Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7058972707:AAE8uPqWhAGM173lMOmzcK-_6G6yyE0HMm8")
 
-#Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "23086312"))
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7314346623:AAGthfZirCo-EUVBkTyp1UOh2BUNVajSosI")
+APP_ID = int(os.environ.get("APP_ID", "23873858"))
+API_HASH = os.environ.get("API_HASH", "bfc7ff263795b22bb7065abe95bed3a2")
 
-#Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "9504d38504fb7941da3ae68ca2796dff")
 
-#Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001988485711"))
+OWNER = os.environ.get("OWNER", "@Patel_080") #Owner username
+OWNER_ID = int(os.environ.get("OWNER_ID", "5284816025")) #Owner user id
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://sunitverma080:4LYZiim5L31SCNBz@realfree.3s31w2j.mongodb.net/?retryWrites=true&w=majority&appName=Realfree")
+DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
 
-#OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1707772962"))
 
-#Port
-PORT = os.environ.get("PORT", "8080")
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002147039566"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002161248543"))
 
-#Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://sunitverma080:thXr9IrGAEjVxKqf@cluster0.djd8by4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "sunitverma080")
 
-#force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001638464949"))
+SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-#start message
+
+PORT = os.environ.get("PORT", "8083")
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "100"))
+
+
+
+
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+
 try:
-    ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    ADMINS=[7085541484]
+    for x in (os.environ.get("ADMINS", "5857939104 5284816025 5857939104 7208538115").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
-#Force sub message 
+
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
-#set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-#set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
-#Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot !"
 
-ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
+ADMINS.append(5284816025)
+ADMINS.append(5284816025)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
@@ -83,3 +83,14 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
+   
+
+
+
+
+
+# Jishu Developer 
+# Don't Remove Credit 🥺
+# Telegram Channel @Madflix_Bots
+# Backup Channel @JishuBotz
+# Developer @JishuDeveloper
